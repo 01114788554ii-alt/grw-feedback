@@ -6,8 +6,8 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-BOT_TOKEN = os.environ.get("8853679871:AAFE6ZX15vwdJfjONXA-xevqd4RJ9QQ90s0", "")
-CHAT_ID = os.environ.get("8225224753", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+CHAT_ID = os.environ.get("CHAT_ID", "")
 
 
 @app.route("/", methods=["GET"])
